@@ -21,7 +21,7 @@ function getWord() {
 }
 
 onMounted(() => {
-  this.getMessage();
+  this.getWord();
 })
 </script>
 
