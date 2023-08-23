@@ -1,18 +1,35 @@
 <script setup>
 import { ref } from 'vue'
+import axios from 'axios';
 
 defineProps({
-  msg: String
+  msg: String,
+  asyn_text : String
 })
 
 const count = ref(0)
+
+axios.defaults.baseURL = 'https://dictionary-api-4rbqr7xcwq-de.a.run.app';  // the FastAPI backend
+function getWord() {
+  axios.get('/v1/wonderful')
+        .then((res) => {
+          this.asyn_text = res.data;
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+}
+
+onMounted(() => {
+  this.getMessage();
+})
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p>{{ asyn_text }}</p>
   <p>
-    Recommended IDE setup: 222
+    Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
     +
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
