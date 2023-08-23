@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import axios from 'axios';
 
 defineProps({
@@ -7,12 +7,20 @@ defineProps({
   asyn_text : String
 })
 
-const count = ref(0)
 
 axios.defaults.baseURL = 'https://dictionary-api-4rbqr7xcwq-de.a.run.app';  // the FastAPI backend
+
+onMounted(async () => {
+  //await this.getWord()
+  console.log("onMounted started")
+  getWord()
+})
+
 function getWord() {
+  console.log("Get Word started")
   axios.get('/v1/wonderful')
         .then((res) => {
+          console.log(res)
           this.asyn_text = res.data;
         })
         .catch((error) => {
@@ -20,9 +28,6 @@ function getWord() {
         });
 }
 
-onMounted(() => {
-  this.getWord();
-})
 </script>
 
 <template>
