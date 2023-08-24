@@ -48,7 +48,11 @@ function getWord() {
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
-
+  <v-icon icon="mdi-home" />
+  <v-icon color="warning" icon="mdi-alert-circle"></v-icon>
+  <v-btn append-icon="$vuetify" variant="outlined">
+  Button
+  </v-btn>
   <button type="button" @click="count++">count is: {{ count }}</button>
   <p>
     Edit
