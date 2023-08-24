@@ -2,26 +2,27 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios';
 
+
 defineProps({
   msg: String,
-  asyn_text : String
 })
 
+const asyn_text = ref("")
 
 axios.defaults.baseURL = 'https://dictionary-api-4rbqr7xcwq-de.a.run.app';  // the FastAPI backend
 
 onMounted(async () => {
-  //await this.getWord()
   console.log("onMounted started")
   getWord()
 })
 
 function getWord() {
+  
   console.log("Get Word started")
-  axios.get('/v1/wonderful')
+  axios.get('/v1/hello')
         .then((res) => {
           console.log(res)
-          this.asyn_text = res.data;
+          asyn_text.value = res.data;
         })
         .catch((error) => {
           console.error(error);
