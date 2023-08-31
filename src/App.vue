@@ -11,7 +11,7 @@ import SampleBlock from './components/Sample.vue'
   <TopBar/>
   <SearchTextfield/>
   <SampleBlock/>
-
+  <SearchTextfield/>
 </v-app>
 </template>
 

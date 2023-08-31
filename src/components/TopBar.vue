@@ -3,7 +3,7 @@ const appTitle =  "GPT Dictionary API"
 const menuItems = [
   { title: 'Paypal', path: '/home', icon: 'mdi-home' },
   { title: 'Github', path: '/signup', icon: 'mdi-face-man' },
-  { title: 'Email', path: '/signin', icon: 'mdi-lock-open' }
+  { title: 'Email', path: '/signin', icon: 'mdi-email' }
 ]
 </script>
 
