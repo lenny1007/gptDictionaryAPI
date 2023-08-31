@@ -4,6 +4,8 @@
 import TopBar from './components/TopBar.vue'
 import SearchTextfield from './components/SearchTextfield.vue'
 import SampleBlock from './components/Sample.vue'
+import Footer from './components/Footer.vue'
+
 </script>
 
 <template>
@@ -11,8 +13,10 @@ import SampleBlock from './components/Sample.vue'
   <TopBar/>
   <SearchTextfield/>
   <SampleBlock/>
-  <SearchTextfield/>
+  <br/><br/>
+  <Footer/>
 </v-app>
+
 </template>
 
 <style>

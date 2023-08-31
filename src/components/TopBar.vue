@@ -1,10 +1,5 @@
 <script setup>
 const appTitle =  "GPT Dictionary API"
-const menuItems = [
-  { title: 'Paypal', path: '/home', icon: 'mdi-home' },
-  { title: 'Github', path: '/signup', icon: 'mdi-face-man' },
-  { title: 'Email', path: '/signin', icon: 'mdi-email' }
-]
 </script>
 
 <template>
@@ -14,25 +9,20 @@ const menuItems = [
       <v-toolbar-title class="pa-2">
         {{ appTitle }}        
       </v-toolbar-title>
+      
+      
       <v-spacer class="d-none d-sm-flex"></v-spacer>
       <v-toolbar-items class="d-none d-sm-flex fill-height">
-        <v-btn
-          v-for="item in menuItems"
-          :key="item.title"
-          :to="item.path"
-          :prepend-icon="item.icon" 
-          stacked>
-          {{ item.title }} 
-        </v-btn>
+        <v-btn href="https://www.google.com/" stacked><v-icon class="ma-1 fab fa-paypal"></v-icon> Paypal  </v-btn>
+        <v-btn stacked><v-icon class="ma-1 fab fa-github"></v-icon> Github  </v-btn>
+        <v-btn stacked><v-icon class="ma-1 fas fa-envelope"></v-icon> Email  </v-btn>
+        
+
       </v-toolbar-items>
       <v-toolbar-items class="d-flex d-sm-none fill-height" >
-        <v-btn
-          v-for="item in menuItems"
-          :key="item.title"
-          :to="item.path"
-          >
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-btn>
+        <v-btn ><v-icon size="xx-large" class="ma-1 fab fa-paypal"></v-icon></v-btn>
+        <v-btn ><v-icon size="xx-large" class="ma-1 fab fa-github"></v-icon></v-btn>
+        <v-btn ><v-icon size="xx-large" class="ma-1 fas fa-envelope"></v-icon></v-btn>
       </v-toolbar-items>
     </v-container>  
     </v-toolbar>

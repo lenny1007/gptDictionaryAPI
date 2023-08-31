@@ -32,6 +32,7 @@ function getWord() {
 </script>
 
 <template>
+  <router-view>
   <h1>{{ msg }}</h1>
   <p>{{ asyn_text }}</p>
   <p>
@@ -58,6 +59,7 @@ function getWord() {
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  </router-view>
 </template>
 
 <style scoped>
