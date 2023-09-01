@@ -39,10 +39,12 @@ const vuetify = createVuetify({
 
 })
 
+
 app.component('font-awesome-icon', FontAwesomeIcon) // Register component globally
 //library.add(fab) // Include needed solid icons
 library.add(fas) // Include needed solid icons
-
 library.add(faPaypal, faGithub)
+
 app.use(vuetify)
+
 app.mount('#app')

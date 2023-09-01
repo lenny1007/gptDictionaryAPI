@@ -3,11 +3,10 @@ import { ref } from 'vue'
 import axios from 'axios';
 
 const asyn_text = ref("")
-axios.defaults.baseURL = 'https://dictionary-api-4rbqr7xcwq-de.a.run.app';  // the FastAPI backend
+//axios.defaults.baseURL = 'https://dictionary-api-4rbqr7xcwq-de.a.run.app';  // the FastAPI backend
 
 function redirect_api(){
-  console.log(word_text.value)
-  window.location.href = "https://dictionary-api-4rbqr7xcwq-de.a.run.app/v1/" +  word_text.value;
+  window.location.href = "https://en.dictionary-api.com/v1/" +  word_text.value;
   /*
   axios.get('/v1/' + word_text.value )
         .then((res) => {
@@ -19,7 +18,7 @@ function redirect_api(){
             router.push({ path: '/hello' })
           console.error(error);
         });
- */
+  */
 }
 const word_text = ref("")
 </script>
