@@ -13,15 +13,18 @@ const appTitle =  "GPT Dictionary API"
       
       <v-spacer class="d-none d-sm-flex"></v-spacer>
       <v-toolbar-items class="d-none d-sm-flex fill-height">
-        <v-btn href="https://www.google.com/" stacked><v-icon class="ma-1 fab fa-paypal"></v-icon> Paypal  </v-btn>
+        <v-btn href="https://paypal.me/lennychen0929?country.x=TW&locale.x=zh_TW" stacked><v-icon class="ma-1 fab fa-paypal"></v-icon> Paypal  </v-btn>
+        <!--
         <v-btn stacked><v-icon class="ma-1 fab fa-github"></v-icon> Github  </v-btn>
-        <v-btn stacked><v-icon class="ma-1 fas fa-envelope"></v-icon> Email  </v-btn>
-        
-
+        -->
+        <v-btn href="mailto:lenny0929@gmail.com" stacked><v-icon class="ma-1 fas fa-envelope"></v-icon> Email  </v-btn>
+      
       </v-toolbar-items>
       <v-toolbar-items class="d-flex d-sm-none fill-height" >
         <v-btn ><v-icon size="xx-large" class="ma-1 fab fa-paypal"></v-icon></v-btn>
+        <!--
         <v-btn ><v-icon size="xx-large" class="ma-1 fab fa-github"></v-icon></v-btn>
+        -->
         <v-btn ><v-icon size="xx-large" class="ma-1 fas fa-envelope"></v-icon></v-btn>
       </v-toolbar-items>
     </v-container>  
