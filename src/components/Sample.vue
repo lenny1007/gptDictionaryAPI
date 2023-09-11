@@ -70,9 +70,7 @@
 
     Your donation directly helps the development of GPT Dictionary API and keeps the server running.</p>
     <br/>
-    <a href="https://paypal.me/lennychen0929?country.x=TW&locale.x=zh_TW" >
-    <img src="https://camo.githubusercontent.com/361950b331ef676b7eec436a4dbe5a7ce47211a6623dcc889b1f5b7b611b27df/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e61746543435f4c472e676966" alt="paypal" data-canonical-src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="max-width:100%;">
-    </a>
+    <a href="https://www.buymeacoffee.com/lenny0929" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </v-container>
 
 </template>
@@ -82,4 +80,6 @@
   word-break: normal;
   white-space: pre-wrap;
 }
+
+
 </style>
