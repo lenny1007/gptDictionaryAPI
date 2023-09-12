@@ -1,4 +1,9 @@
 <script setup>
+  import sfx from "../assets/hello.mp3"
+  const audio = new Audio(sfx) 
+  function playHelloAudio(){
+    audio.play()
+  }
 
 </script>
 
@@ -34,8 +39,8 @@
       }
     ],
     
-    "phonic": "/heˈloʊ/",
-    "audio": "https://storage.googleapis.com/dictionary_api_audio_files/src/hello.mp3",
+    "phonic": "/heˈloʊ/", 
+    "audio": "https://storage.googleapis.com/dictionary_api_audio_files/src/hello.mp3", <v-btn @click="playHelloAudio" variant="tonal"><v-icon class="fas fa-volume-high"></v-icon></v-btn>
 
     "paragraph": "When greeting someone or starting a conversation, it is common to use the word hello. Hello is a friendly and polite way to acknowledge someone's presence or to initiate interaction. It is a versatile word that can be used in both formal and informal settings. Additionally, hello can also be used as an exclamation to express surprise or to get someone's attention. 
     For example, if you witness something unexpected, you might say Hello! Did you see that? or if you want to get someone's attention, you may say Hello! Can I ask you a question? 
@@ -65,13 +70,31 @@
     <v-spacer/>
     <hr/>
     <br/>
+
   <h2 class="text-h5">Donate</h2><br/>
   <p>GPT Dictionary API is—and always will be—free. <br/>
 
     Your donation directly helps the development of GPT Dictionary API and keeps the server running.</p>
     <br/>
     <a href="https://www.buymeacoffee.com/lenny0929" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-</v-container>
+      
+    <br/>
+    <br/>
+    <v-spacer/>
+    <hr/>
+    <br/>
+
+    <h2 class="text-h5">Downloads</h2><br/>
+    <p>You can purchase and download all the files used in the GPT Dictionary API.<br/>
+      
+      Total GPT Dictionary contains 66589 words, with English words definitions and a paragraph explains the word.
+      <br/><br/>  
+      Easy to import to any database and simple to use. 
+    </p>
+    <br/>
+    <v-btn href="https://www.buymeacoffee.com/lenny0929/extras" variant="outlined"> Check out Downloads </v-btn>
+  
+  </v-container>
 
 </template>
 
